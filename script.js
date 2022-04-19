@@ -3,9 +3,10 @@ console.log(numero1)
 
 const botaoSortear = document.querySelector("div.box button")
 var numeroSorteado = document.querySelector("div.box h2")
-var roleta = []
+
 
 function sortear(){
+    var roleta = []
     var input1 = document.getElementById("numero1")
     var numero1 = parseInt(input1.value) 
     var input2 = document.getElementById("numero2")
@@ -18,7 +19,6 @@ function sortear(){
 }
 
 botaoSortear.addEventListener("click", () => {
-    console.log(roleta)
     sortear()
 })
 
