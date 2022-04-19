@@ -12,10 +12,15 @@ function sortear(){
     var input2 = document.getElementById("numero2")
     var numero2 = parseInt(input2.value)
     
+    if (!numero1 || !numero2 ) {
+        window.alert("Digite os numeros para continuar.")
+        return
+    }
+
     for(numero1; numero1 <=numero2; numero1++){
         roleta.push(numero1)
     }
-    numeroSorteado.innerHTML = "O numero sorteado é: " + roleta[Math.floor(Math.random() * roleta.length)]
+    numeroSorteado.innerHTML = roleta[Math.floor(Math.random() * roleta.length)]
 }
 
 botaoSortear.addEventListener("click", () => {
