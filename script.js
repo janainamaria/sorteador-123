@@ -1,20 +1,25 @@
-var input1 = document.getElementById("numero1")
-var nnumero1 = parseInt(input1.value) 
-var input2 = document.getElementById("numero2")
-var nnumero2 = parseInt(input2.value)
+
 console.log(numero1)
 
 const botaoSortear = document.querySelector("div.box button")
 var numeroSorteado = document.querySelector("div.box h2")
 var roleta = []
 
-for(input1; input1 <=input2; input1++){
-    roleta.push(input1)
+function sortear(){
+    var input1 = document.getElementById("numero1")
+    var numero1 = parseInt(input1.value) 
+    var input2 = document.getElementById("numero2")
+    var numero2 = parseInt(input2.value)
+    
+    for(numero1; numero1 <=numero2; numero1++){
+        roleta.push(numero1)
+    }
+    numeroSorteado.innerHTML = "O numero sorteado é: " + roleta[Math.floor(Math.random() * roleta.length)]
 }
 
 botaoSortear.addEventListener("click", () => {
-    numeroSorteado.innerHTML = "O numero sorteado é: " + roleta[Math.floor(Math.random() * roleta.length)]
-
+    console.log(roleta)
+    sortear()
 })
 
 function typeWriter(elemento) {
