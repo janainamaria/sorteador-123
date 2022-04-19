@@ -78,3 +78,71 @@ input{
 	border-radius: 50px;
     font-size: 20px;
 }
+@media screen and (max-width:768px){
+    h1{
+        font-size: 25px;
+    }
+    input{
+        padding: 5px;
+        font-size: 15px;
+    }
+    div.box{
+        min-width: 300px;
+        background-color: aliceblue;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    h2{
+        font-size: 15px;
+        color: #4b4b47;
+        margin: 15px 0;
+    }
+    button{
+        font-size: 11pt;
+        padding: 10px 15px;
+        border: 0;
+        border-radius: 100px;
+        background-color: #F28705;
+        color: aliceblue;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+    }
+}
+@media screen and (max-width:312px){
+    h1{
+        font-size: 20px;
+    }
+    input{
+        padding: 3px;
+        font-size: 10px;
+    }
+    div.box{
+        min-width: 200px;
+        background-color: aliceblue;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    h2{
+        font-size: 15px;
+        color: #4b4b47;
+        margin: 15px 0;
+    }
+    button{
+        font-size: 5pt;
+        padding: 5px 6px;
+        border: 0;
+        border-radius: 100px;
+        background-color: #F28705;
+        color: aliceblue;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+    }
+    button:hover{
+        color: aliceblue;
+        background-color:#025E73;
+        transform: scale(0.5) ;
+}}
