@@ -1,9 +1,15 @@
+var input1 = document.getElementById("numero1")
+var nnumero1 = parseInt(input1.value) 
+var input2 = document.getElementById("numero2")
+var nnumero2 = parseInt(input2.value)
+console.log(numero1)
+
 const botaoSortear = document.querySelector("div.box button")
 var numeroSorteado = document.querySelector("div.box h2")
 var roleta = []
 
-for(i = 0; i <=50; i++){
-    roleta.push(i)
+for(input1; input1 <=input2; input1++){
+    roleta.push(input1)
 }
 
 botaoSortear.addEventListener("click", () => {
@@ -20,3 +26,5 @@ function typeWriter(elemento) {
   }
   const titulo = document.querySelector('h1');
   typeWriter(titulo);
+
+ 
